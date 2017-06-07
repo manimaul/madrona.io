@@ -11,10 +11,10 @@ import react.dom.render
 import kotlin.browser.document
 
 fun main(args: Array<String>) {
-    runtime.wrappers.require("style.css")
+    runtime.wrappers.require("style.scss")
 
     ReactDOM.render(document.getElementById("content")) {
-        div {
+        div(classes = "code-font-stack") {
             Application {}
         }
     }
