@@ -8,7 +8,7 @@ backend/.database/*
 !.idea/vcs.xml
 build
 *.iml
-.gradle/
+.gradle/*
 .DS_Store
 
 *.versionsBackup
