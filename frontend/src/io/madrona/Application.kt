@@ -14,7 +14,7 @@ fun main(args: Array<String>) {
     runtime.wrappers.require("style.scss")
 
     ReactDOM.render(document.getElementById("content")) {
-        div(classes = "code-font-stack") {
+        div {
             Application {}
         }
     }

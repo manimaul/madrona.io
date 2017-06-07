@@ -42,6 +42,7 @@ kotlinFrontend {
         sourceMapEnabled = true
         contentPath = file("$project.buildDir.path/js")
         port = 8080
+        publicPath = "/"
     }
 }
 

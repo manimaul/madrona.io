@@ -43,13 +43,13 @@ body {
   font-kerning: normal;
 }
 
-//.section-hero {
-//  @include bg_img('../images/bg_top.jpg')
-//}
-//
-//.section-seattle {
-//  @include bg_img('../images/seattle.jpg')
-//}
+.section-hero {
+  @include bg_img('/images//bg_top.jpg')
+}
+
+.section-seattle {
+  @include bg_img('/images//seattle.jpg')
+}
 
 .icon {
   height: 96px;
@@ -137,12 +137,12 @@ body {
   margin-bottom: 30px;
 }
 
-//.mad_footer {
-//  div {
-//    @include top_bottom_padding(16pt);
-//  }
-//  @include bg_img('../images/bg_bottom.jpg');
-//}
+.mad_footer {
+  div {
+    @include top_bottom_padding(16pt);
+  }
+  @include bg_img('/images//bg_bottom.jpg');
+}
 
 .centered {
   display: block;
