@@ -1,0 +1,3 @@
+rootProject.name = 'madrona.io'
+include "frontend"
+
