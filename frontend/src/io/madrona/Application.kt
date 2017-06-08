@@ -1,8 +1,10 @@
 package io.madrona
 
+import kotlinx.html.Entities
 import kotlinx.html.div
-import react.RState
+import kotlinx.html.h1
 import react.ReactComponentNoProps
+import react.ReactComponentNoState
 import react.ReactComponentSpec
 import react.dom.ReactDOM
 import react.dom.ReactDOMBuilder
@@ -20,26 +22,20 @@ fun main(args: Array<String>) {
     }
 }
 
-class Application : ReactDOMComponent<ReactComponentNoProps, ApplicationPageState>() {
-    companion object : ReactComponentSpec<Application, ReactComponentNoProps, ApplicationPageState>
+class Application : ReactDOMComponent<ReactComponentNoProps, ReactComponentNoState>() {
+    companion object : ReactComponentSpec<Application, ReactComponentNoProps, ReactComponentNoState>
 
     init {
-        state = ApplicationPageState(MainView.Home)
-    }
-
-    override fun componentWillUnmount() {
-        super.componentWillUnmount()
+        state = ReactComponentNoState()
     }
 
     override fun ReactDOMBuilder.render() {
         div {
-            + "Hello Kotlin and React from Madrona.io"
+            MadMenu {}
+            MadHero(props = MadHero.Image("/images/madrona_logo-nq8.png"))
+            h1 { Entities.nbsp }
+            MadSeattle {}
+            MadAbout {}
         }
     }
 }
-
-enum class MainView {
-    Home
-}
-
-class ApplicationPageState(var selected: MainView) : RState

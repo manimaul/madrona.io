@@ -10,6 +10,7 @@ build
 *.iml
 .gradle/*
 .DS_Store
+migrate/
 
 *.versionsBackup
 *.releaseBackup

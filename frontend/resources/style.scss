@@ -44,11 +44,15 @@ body {
 }
 
 .section-hero {
-  @include bg_img('/images//bg_top.jpg')
+  @include bg_img('/images//bg_top.jpg');
 }
 
 .section-seattle {
-  @include bg_img('/images//seattle.jpg')
+  @include bg_img('/images//seattle.jpg');
+}
+
+.seattle {
+  height: 325px;
 }
 
 .icon {
