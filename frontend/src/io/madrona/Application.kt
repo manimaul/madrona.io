@@ -33,9 +33,11 @@ class Application : ReactDOMComponent<ReactComponentNoProps, ReactComponentNoSta
         div {
             MadMenu {}
             MadHero(props = MadHero.Image("/images/madrona_logo-nq8.png"))
+            MadHatHeader {}
             h1 { Entities.nbsp }
             MadSeattle {}
             MadAbout {}
+            MadFooter {}
         }
     }
 }
